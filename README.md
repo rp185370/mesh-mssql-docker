@@ -22,7 +22,7 @@ docker-compose up -d
 
 # The .env file -
 You would find a file named `.env` which you would need to configure to your requirements.
-- `COMPOSE_PROJECT_NAME : The name of your docker stack
+- `COMPOSE_PROJECT_NAME` : The name of your docker stack
 - `MESH_VERSION` : The version of MESH you would want to install.
 - `MESH_DATALOAD_DIR` : The "dataload" directory for MESH
 - `LIQUIBASE_SCRIPTS_DIR` : The directory that contains all the relevant liquibase scripts
