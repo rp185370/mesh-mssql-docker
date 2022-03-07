@@ -19,6 +19,12 @@ docker-compose up -d
    - cxp
    - commonservices
    - terminalmanager
+   ```text
+   ***NOTE***
+   Change the below .sql files to comment the use of "xp_cmdshell" (as its not required in linux env)
+   - \liquibase-scripts\commonservices\create\sql\mssql\cxthcs_createDatabase_mssql.sql
+   - \liquibase-scripts\terminalmanager\create\sql\mssql\cxthtm_createDatabase_mssql.sql
+   ```
 
 # The .env file -
 You would find a file named `.env` which you would need to configure to your requirements.
