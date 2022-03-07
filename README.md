@@ -3,7 +3,13 @@ Docker compose to spin up MESH with MS SQL Server.
 This will help you to get started with MESH and a DB server backing the application up, in no time!
 
 # How to run?
-Clone the repo 'anywhere'. And then -
+Clone the repo 'anywhere'. 
+Make sure you're logged in to your jfrog-docker registry. If not, run the below:
+```text
+docker login ncr-fsg-ess-docker-releases.jfrog.io
+```
+
+And then -
 You could either use IntelliJ docker plugin to run the docker-compose.yml file,
 
 OR,
