@@ -12,17 +12,17 @@ RUN apt update \
     && rm -rf /var/lib/apt/lists/*
 
 # Install liquibase
-ADD liquibase-4.4.3.tar.gz /home/liquibase
+ADD resources/liquibase-4.4.3.tar.gz /home/liquibase
 ENV PATH="/home/liquibase:${PATH}"
 
 # Add sqlserver driver to liquibase
-COPY sqljdbc42.jar /home/liquibase/lib
+COPY resources/sqljdbc42.jar /home/liquibase/lib
 
 # Copy all the scripts to 'home'
-COPY prepareCxth.sh /home
-COPY prepareCxp.sh /home
-COPY start.sh /home
-COPY entrypoint.sh /home
+COPY scripts/prepareCxth.sh /home
+COPY scripts/prepareCxp.sh /home
+COPY scripts/start.sh /home
+COPY scripts/entrypoint.sh /home
 
 # Run the boot point
 RUN chmod +x /home/entrypoint.sh
