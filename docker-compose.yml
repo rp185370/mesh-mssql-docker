@@ -6,7 +6,7 @@ services:
     ports:
       - "1433:1433"
     volumes:
-      - /c/ncrdev/liquibase-scripts:/mnt/liquibase-scripts
+      - ${LIQUIBASE_SCRIPTS_DIR}:/mnt/liquibase-scripts
   mesh:
     image: ncr-fsg-ess-docker-releases.jfrog.io/com/ncr/cxp:${MESH_VERSION}
     environment:
