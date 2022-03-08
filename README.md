@@ -51,6 +51,6 @@ docker-compose up -d
 You would find a file named `.env` which you would need to configure to your requirements.
 - `COMPOSE_PROJECT_NAME` : The name of your docker stack.
 - `MESH_VERSION` : The version of MESH you would want to install.
-- `MESH_DATALOAD_DIR` : The "dataload" directory for MESH.
+- `NCR_DIR` : The "c/ncr" directory with all the relevant properties and "dataload" directory.
 - `LIQUIBASE_SCRIPTS_DIR` : The directory that contains all the relevant liquibase scripts.
 - `SA_PASSWORD` : The password you would like to set for SA user.
