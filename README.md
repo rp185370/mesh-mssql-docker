@@ -1,4 +1,4 @@
-# mesh-mssql-docker
+# mesh-mssql-docker (Purely intended for DEV)
 Docker compose to spin up MESH with MS SQL Server.
 This will help you to get started with MESH and a DB server backing the application up, in no time!
 
