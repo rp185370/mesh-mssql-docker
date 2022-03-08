@@ -11,6 +11,7 @@ services:
     image: ncr-fsg-ess-docker-releases.jfrog.io/com/ncr/cxp:${MESH_VERSION}
     environment:
       - PROPERTY_ENCRYPTION_PASSWORD=nep
+      - SA_PASSWORD=${SA_PASSWORD}
     ports:
       - "80:8080"
     volumes:
