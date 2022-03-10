@@ -20,7 +20,7 @@ docker-compose up -d
 ```
 
 # Pre-requisites!!
-1. Configure the C:/ncr relevant properties for MESH.
+1. Configure the C:/ncr relevant properties, `dataload` and `license` folders for MESH.
    ```text
    Edit the property files.
       Assuming that all the relevant property files that are used by mesh are placed in "C:\ncr" directory, do the following:
