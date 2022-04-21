@@ -24,8 +24,9 @@ docker-compose up -d
    ```text
    Edit the property files.
       Assuming that all the relevant property files that are used by mesh are placed in "C:\ncr" directory, do the following:
-      - Change all occurrences of "localhost" to "host.docker.internal".
-      - Change all occurrences of "127.0.0.1" to <your-internal-IP-Address>.
+      - Change all occurrences of "localhost" and "127.0.0.1" to "host.docker.internal".
+   CAVEAT: Add the below entry to your "hosts" file (C:\Windows\System32\drivers\etc\hosts) and change whenever your host IP changes:
+      <host-ip> host.docker.internal
    Files that needs to be edited with the above changes are - 
       - wasp.properties
       - cxth.runtime.properties
